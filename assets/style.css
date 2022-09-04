@@ -140,4 +140,14 @@ footer p {
     text-align: center;
     flex-basis: 100%;
   }
+
+  footer {
+    height: 150px;
+    align-items: baseline;
+  }
+
+  footer p {
+    margin-top: 25px;
+    border-radius-top: 10px;
+  }
 }
