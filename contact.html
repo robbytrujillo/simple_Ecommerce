@@ -41,75 +41,7 @@
                     </a>
                 </li>
             </ul>
-
-
-            <style>
-                body {
-                  font-family: Arial, Helvetica, sans-serif;
-                }
-                
-                * {
-                  box-sizing: border-box;
-                }
-                
-                /* Style untuk inputs */
-                input[type=text], select, textarea {
-                  width: 100%;
-                  padding: 12px;
-                  border: 1px solid #ccc;
-                  margin-top: 6px;
-                  margin-bottom: 16px;
-                  resize: vertical;
-                }
-                
-                input[type=submit] {
-                  background-color: #4CAF50;
-                  color: white;
-                  padding: 12px 20px;
-                  border: none;
-                  cursor: pointer;
-                }
-                
-                input[type=submit]:hover {
-                  background-color: #45a049;
-                }
-                
-                /* Style untuk bagian container/contact  */
-                .container {
-                  border-radius: 5px;
-                  background-color: #f2f2f2;
-                  padding: 10px;
-                }
-                
-                /* Buat dua kolom yang berfloat di samping satu sama lain */
-                .column {
-                  float: left;
-                  width: 50%;
-                  margin-top: 6px;
-                  padding: 20px;
-                }
-                
-                /* Hapus floats setelah columns */
-                .row:after {
-                  content: "";
-                  display: table;
-                  clear: both;
-                }
-                
-                /* Responsive layout -ketika layar kurang dari 600px lebarnya, buat dua kolom bertumpuk satu sama lain, bukan di samping satu sama lain */
-                @media screen and (max-width: 600px) {
-                  .column, input[type=submit] {
-                    width: 100%;
-                    margin-top: 0;
-                  }
-                }
-                </style>
         </header>
-
-        <h2>Responsive Contact Section</h2>
-        <p>Ubah ukuran jendela browser untuk melihat efeknya.</p>
-        <!-- <div class="row"> -->
-       
             <!-- </div> -->
         </div>
         <br><br>
@@ -118,6 +50,26 @@
                 <h2 class="title">Contact</h2>
                 <p>Jika ada yang bisa kami bantu bisa hubungi kami:</p>
             </div>
+
+            <div class="row">
+                <!-- column / Kolom -->
+                <div class="col" onclick="buy('baju lebaran', 150000)">
+                    <img src="assets/icons/8541641_address_book_icon.png" />
+                    <h4>Address</h4>
+                    <p>Jl. Semar No. 86 RT 11 RW 05,Munjul Cipayung Jakarta Timur DKI Jakarta</p>
+                </div>
+                <div class="col" onclick="buy('baju polo', 210000)">
+                    <img src="assets/icons/134145_mail_email_icon.png" />
+                    <h4>Email</h4>
+                    <p>robbyikusuma88@gmail.com</p>
+                </div>
+                <div class="col" onclick="buy('kaos puma', 185000)">
+                    <img src="assets/icons/3669371_contact_ic_phone_icon.png" />
+                    <h4>Contact</h4>
+                    <p>087882770761</p>
+                </div>
+                </div>
+
             <div class="row">
                 <div class="column">
                     <iframe
